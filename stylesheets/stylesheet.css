@@ -67,39 +67,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Roboto";
   src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
-/* line 8, ../sass/stylesheet.scss */
+/* line 28, ../sass/stylesheet.scss */
 .green-text {
   color: #7ade34;
   font-weight: bold;
 }
 
-/* line 12, ../sass/stylesheet.scss */
+/* line 32, ../sass/stylesheet.scss */
 .green-background, #container-fluid-bg-sakura .sakura-title, #why-you-need-section .why-you-need-title, #whats-more .whats-more-title {
   background-color: #9acb78;
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 25px;
 }
-/* line 17, ../sass/stylesheet.scss */
+/* line 37, ../sass/stylesheet.scss */
 .green-background h2, #container-fluid-bg-sakura .sakura-title h2, #why-you-need-section .why-you-need-title h2, #whats-more .whats-more-title h2 {
   font-size: 35px;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
 }
+@media only screen and (max-width: 991px) {
+  /* line 37, ../sass/stylesheet.scss */
+  .green-background h2, #container-fluid-bg-sakura .sakura-title h2, #why-you-need-section .why-you-need-title h2, #whats-more .whats-more-title h2 {
+    font-size: 26px;
+    line-height: 22px;
+  }
+}
 
-/* line 24, ../sass/stylesheet.scss */
+/* line 48, ../sass/stylesheet.scss */
 .font-bold {
   font-weight: bold;
 }
 
-/* line 27, ../sass/stylesheet.scss */
+/* line 51, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-text p, #why-you-need-section .why-you-need-content ul, #container-fluid-bg-girl .girl-content, #whats-more .whats-more-content, #whats-more .reviews-content {
   padding-left: 115px;
   padding-right: 115px;
 }
+@media only screen and (max-width: 991px) {
+  /* line 51, ../sass/stylesheet.scss */
+  #container-fluid-bg-sakura .sakura-text p, #why-you-need-section .why-you-need-content ul, #container-fluid-bg-girl .girl-content, #whats-more .whats-more-content, #whats-more .reviews-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
-/* line 32, ../sass/stylesheet.scss */
+/* line 60, ../sass/stylesheet.scss */
 .button-style .orange-button, #container-fluid-bg-top #top-section .special-promo-section .orange-button, .special-promo-section-2 .orange-button, #container-fluid-bg-girl .orange-button {
   cursor: pointer;
   background-image: url(../images/bg_button.png);
@@ -109,97 +123,91 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 20px 0;
   color: #ffffff;
 }
-/* line 40, ../sass/stylesheet.scss */
+/* line 68, ../sass/stylesheet.scss */
 .button-style .orange-button .btn-text-yes, #container-fluid-bg-top #top-section .special-promo-section .orange-button .btn-text-yes, .special-promo-section-2 .orange-button .btn-text-yes, #container-fluid-bg-girl .orange-button .btn-text-yes {
   font-weight: bold;
   font-size: 33px;
   padding-right: 20px;
   border-right: 3px solid #ffffff;
 }
-/* line 46, ../sass/stylesheet.scss */
+/* line 74, ../sass/stylesheet.scss */
 .button-style .orange-button .btn-text-add, #container-fluid-bg-top #top-section .special-promo-section .orange-button .btn-text-add, .special-promo-section-2 .orange-button .btn-text-add, #container-fluid-bg-girl .orange-button .btn-text-add {
   font-size: 18px;
   padding-left: 40px;
 }
 
-/* line 54, ../sass/stylesheet.scss */
+/* line 81, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .promo-title, .special-promo-section-2 .promo-title {
   margin-left: 45px;
 }
-/* line 56, ../sass/stylesheet.scss */
+/* line 83, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .promo-title h3, .special-promo-section-2 .promo-title h3 {
   font-size: 26px;
   margin-bottom: 15px;
 }
-/* line 60, ../sass/stylesheet.scss */
+/* line 87, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .promo-title .figcaption-promo, .special-promo-section-2 .promo-title .figcaption-promo {
   font-size: 18px;
 }
-/* line 64, ../sass/stylesheet.scss */
+/* line 91, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .price, .special-promo-section-2 .price {
   font-size: 31px;
 }
-/* line 67, ../sass/stylesheet.scss */
+/* line 94, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .counter-title, .special-promo-section-2 .counter-title {
   font-size: 18px;
   margin: 35px 0 15px 45px;
 }
-/* line 71, ../sass/stylesheet.scss */
+/* line 98, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section #counter, .special-promo-section-2 #counter {
   padding: 10px 0;
   margin: 0 auto;
 }
-/* line 74, ../sass/stylesheet.scss */
+/* line 101, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section #counter p, .special-promo-section-2 #counter p {
   font-size: 31px;
   text-align: center;
 }
-/* line 78, ../sass/stylesheet.scss */
+/* line 105, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section #counter .figcaption-counter, .special-promo-section-2 #counter .figcaption-counter {
   font-size: 8px;
   text-align: center;
 }
 
-/* for Bootstrap */
-/* line 86, ../sass/stylesheet.scss */
-.no-margin {
-  margin: 0 !important;
-}
-
-/* line 87, ../sass/stylesheet.scss */
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-/**/
-/* line 92, ../sass/stylesheet.scss */
+/* line 114, ../sass/stylesheet.scss */
 .left {
   float: left;
 }
 
-/* line 93, ../sass/stylesheet.scss */
+/* line 115, ../sass/stylesheet.scss */
 .right {
   float: right;
 }
 
-/* line 95, ../sass/stylesheet.scss */
+/* line 117, ../sass/stylesheet.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 99, ../sass/stylesheet.scss */
+/* line 121, ../sass/stylesheet.scss */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 18px;
 }
 
-/* line 103, ../sass/stylesheet.scss */
+/* line 125, ../sass/stylesheet.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 108, ../sass/stylesheet.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 128, ../sass/stylesheet.scss */
+  .container {
+    width: 1020px;
+  }
+}
+
+/* line 136, ../sass/stylesheet.scss */
 #container-fluid-bg-top {
   background: url(../images/bg_header.png) no-repeat local;
   -moz-background-size: 100% 80%;
@@ -207,47 +215,56 @@ body {
   -webkit-background-size: 100% 80%;
   background-size: 100% 80%;
 }
-/* line 112, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 136, ../sass/stylesheet.scss */
+  #container-fluid-bg-top {
+    -moz-background-size: 100% 60%;
+    -o-background-size: 100% 60%;
+    -webkit-background-size: 100% 60%;
+    background-size: 100% 60%;
+  }
+}
+/* line 143, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section {
   color: #ffffff;
 }
-/* line 114, ../sass/stylesheet.scss */
+/* line 145, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section h2 {
   margin: 20px 0;
   font-size: 31px;
 }
-/* line 120, ../sass/stylesheet.scss */
+/* line 151, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .list_with_tick_mark ul {
   margin-top: 40px;
   margin-bottom: 50px;
 }
-/* line 123, ../sass/stylesheet.scss */
+/* line 154, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .list_with_tick_mark ul li {
   margin-bottom: 10px;
 }
-/* line 125, ../sass/stylesheet.scss */
+/* line 156, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .list_with_tick_mark ul li img {
   padding-right: 10px;
   vertical-align: middle;
 }
-/* line 129, ../sass/stylesheet.scss */
+/* line 160, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .list_with_tick_mark ul li p {
   display: inline-block;
 }
-/* line 141, ../sass/stylesheet.scss */
+/* line 172, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section {
   margin-top: 40px;
 }
-/* line 143, ../sass/stylesheet.scss */
+/* line 174, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 {
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 146, ../sass/stylesheet.scss */
+/* line 177, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card-image {
   margin-bottom: 20px;
 }
-/* line 149, ../sass/stylesheet.scss */
+/* line 180, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -257,45 +274,71 @@ body {
   padding: 20px;
   height: 500px;
 }
-/* line 155, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 180, ../sass/stylesheet.scss */
+  #container-fluid-bg-top #top-section .cards-section .col-md-4 .card {
+    height: 600px;
+  }
+}
+/* line 189, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-content-last {
   margin-top: 100px;
   height: 100px;
 }
-/* line 158, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 189, ../sass/stylesheet.scss */
+  #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-content-last {
+    margin-top: 110px;
+  }
+}
+/* line 195, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-content-last .card-image-inner {
   padding-top: 15px;
   padding-bottom: 30px;
 }
-/* line 163, ../sass/stylesheet.scss */
+/* line 200, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-content {
   height: 100px;
 }
-/* line 165, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 200, ../sass/stylesheet.scss */
+  #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-content {
+    height: 130px;
+  }
+}
+/* line 205, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-content .card-image-inner {
   padding-top: 15px;
   padding-bottom: 30px;
 }
-/* line 174, ../sass/stylesheet.scss */
+/* line 214, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .header-image-section {
   position: relative;
   top: 0;
   left: 0;
 }
-/* line 178, ../sass/stylesheet.scss */
+/* line 218, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .header-image-section .image-premium {
   position: relative;
   top: 0;
   left: 0;
 }
-/* line 183, ../sass/stylesheet.scss */
+/* line 223, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .header-image-section .discount-image {
   position: absolute;
   top: 0;
   right: 50px;
 }
+@media only screen and (max-width: 991px) {
+  /* line 223, ../sass/stylesheet.scss */
+  #container-fluid-bg-top #top-section .header-image-section .discount-image {
+    max-width: 100px;
+    top: 10px;
+    right: 30px;
+  }
+}
 
-/* line 194, ../sass/stylesheet.scss */
+/* line 239, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura {
   background: url(../images/bg_sakura.png) no-repeat local;
   -moz-background-size: cover;
@@ -303,69 +346,84 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 197, ../sass/stylesheet.scss */
+/* line 242, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-title {
   background-color: #98c576;
 }
-/* line 200, ../sass/stylesheet.scss */
+/* line 245, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-title h2 {
   font-size: 26px;
 }
-/* line 205, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 245, ../sass/stylesheet.scss */
+  #container-fluid-bg-sakura .sakura-title h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+/* line 254, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-text p {
   font-size: 20px;
   padding-bottom: 45px;
   line-height: 24px;
 }
 
-/* line 216, ../sass/stylesheet.scss */
+/* line 265, ../sass/stylesheet.scss */
 .special-promo-section-2 {
   position: relative;
   text-align: center;
 }
-/* line 221, ../sass/stylesheet.scss */
+/* line 270, ../sass/stylesheet.scss */
 .special-promo-section-2 .discount-image-2 {
   position: absolute;
   right: 0;
   top: -55px;
 }
-/* line 226, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 270, ../sass/stylesheet.scss */
+  .special-promo-section-2 .discount-image-2 {
+    max-width: 100px;
+    top: -40px;
+    right: 30px;
+  }
+}
+/* line 280, ../sass/stylesheet.scss */
 .special-promo-section-2 .promo-title {
   margin-left: 0;
 }
-/* line 228, ../sass/stylesheet.scss */
+/* line 282, ../sass/stylesheet.scss */
 .special-promo-section-2 .promo-title h3 {
   margin-top: 50px;
   margin-bottom: 15px;
 }
-/* line 233, ../sass/stylesheet.scss */
+/* line 287, ../sass/stylesheet.scss */
 .special-promo-section-2 .counter-title {
   font-size: 18px;
   margin: 35px 0 15px 0;
 }
-/* line 237, ../sass/stylesheet.scss */
+/* line 291, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 {
   text-align: center;
 }
-/* line 239, ../sass/stylesheet.scss */
+/* line 293, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 p {
   font-size: 31px;
 }
-/* line 242, ../sass/stylesheet.scss */
+/* line 296, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 .figcaption-counter-2 {
   font-size: 8px;
   text-align: center;
 }
 
-/* line 251, ../sass/stylesheet.scss */
+/* line 305, ../sass/stylesheet.scss */
 #why-you-need-section {
   margin-bottom: 20px;
 }
-/* line 253, ../sass/stylesheet.scss */
+/* line 307, ../sass/stylesheet.scss */
 #why-you-need-section .why-you-need-title {
   margin-bottom: 20px;
 }
-/* line 258, ../sass/stylesheet.scss */
+/* line 312, ../sass/stylesheet.scss */
 #why-you-need-section .why-you-need-content h3 {
   font-weight: bold;
   font-size: 26px;
@@ -373,8 +431,15 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 991px) {
+  /* line 312, ../sass/stylesheet.scss */
+  #why-you-need-section .why-you-need-content h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
-/* line 273, ../sass/stylesheet.scss */
+/* line 331, ../sass/stylesheet.scss */
 #container-fluid-bg-girl {
   background: url(../images/bg_girl.png) no-repeat local;
   -moz-background-size: cover;
@@ -385,63 +450,70 @@ body {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 280, ../sass/stylesheet.scss */
+/* line 338, ../sass/stylesheet.scss */
 #container-fluid-bg-girl .girl-content {
   font-size: 22px;
 }
-/* line 283, ../sass/stylesheet.scss */
+/* line 341, ../sass/stylesheet.scss */
 #container-fluid-bg-girl .girl-content .orange-button {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 293, ../sass/stylesheet.scss */
+/* line 351, ../sass/stylesheet.scss */
 #whats-more .whats-more-title {
   margin-top: 0;
   position: relative;
 }
-/* line 297, ../sass/stylesheet.scss */
+/* line 355, ../sass/stylesheet.scss */
 #whats-more .whats-more-title .discount-image-3 {
   position: absolute;
   top: -50px;
   right: 120px;
 }
-/* line 302, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 355, ../sass/stylesheet.scss */
+  #whats-more .whats-more-title .discount-image-3 {
+    max-width: 100px;
+    top: -20px;
+  }
+}
+/* line 364, ../sass/stylesheet.scss */
 #whats-more .whats-more-title .smaller-text {
   font-size: 26px;
 }
-/* line 306, ../sass/stylesheet.scss */
+/* line 368, ../sass/stylesheet.scss */
 #whats-more .whats-more-content {
   padding-bottom: 40px;
 }
-/* line 312, ../sass/stylesheet.scss */
+/* line 374, ../sass/stylesheet.scss */
 #whats-more .reviews-content .reviews-section {
   margin-bottom: 80px;
 }
-/* line 314, ../sass/stylesheet.scss */
+/* line 376, ../sass/stylesheet.scss */
 #whats-more .reviews-content .reviews-section .name {
   font-weight: bold;
   padding-bottom: 10px;
 }
-/* line 319, ../sass/stylesheet.scss */
+/* line 381, ../sass/stylesheet.scss */
 #whats-more .reviews-content .reviews-section-last {
   margin-bottom: 0;
 }
 
-/* line 325, ../sass/stylesheet.scss */
+/* line 387, ../sass/stylesheet.scss */
 .special-promo-section-2 {
   text-align: center;
 }
-/* line 330, ../sass/stylesheet.scss */
+/* line 392, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-3 p {
   font-size: 31px;
 }
-/* line 333, ../sass/stylesheet.scss */
+/* line 395, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-3 .figcaption-counter-3 {
   font-size: 8px;
 }
 
-/* line 341, ../sass/stylesheet.scss */
+/* line 403, ../sass/stylesheet.scss */
 #footer {
   background-color: #9acb78;
   color: #ffffff;
@@ -449,30 +521,36 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 347, ../sass/stylesheet.scss */
+/* line 409, ../sass/stylesheet.scss */
 #footer img {
   padding-right: 115px;
 }
-/* line 350, ../sass/stylesheet.scss */
+/* line 412, ../sass/stylesheet.scss */
 #footer .footer-text {
   padding-left: 30px;
 }
-/* line 352, ../sass/stylesheet.scss */
+/* line 414, ../sass/stylesheet.scss */
 #footer .footer-text h1 {
   font-weight: bold;
   font-size: 26px;
   padding-top: 35px;
   padding-bottom: 25px;
 }
-/* line 358, ../sass/stylesheet.scss */
+@media only screen and (max-width: 991px) {
+  /* line 414, ../sass/stylesheet.scss */
+  #footer .footer-text h1 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+/* line 424, ../sass/stylesheet.scss */
 #footer .footer-text p {
   font-size: 18px;
   line-height: 22px;
 }
-
-@media (min-width: 1200px) {
-  /* line 368, ../sass/stylesheet.scss */
-  .container {
-    width: 1020px;
+@media only screen and (max-width: 991px) {
+  /* line 424, ../sass/stylesheet.scss */
+  #footer .footer-text p {
+    font-size: 16px;
   }
 }

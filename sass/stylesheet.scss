@@ -1,5 +1,25 @@
 @import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius";
 
+
+// -------------------------------------------------------------------------------------------------------------- MIXINS
+@mixin change-large-screen {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin change-small-screen {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin change-extra-small-screen {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+// --------------------------------------------------------------------------------------------------------- /end mixins
+
+// ----------------------------------------------------------------------------------------------------- INCLUDE, EXTEND
 @include font-face("Roboto", font-files("Roboto-Regular.ttf"));
 $color-light-green: #7ade34;
 $color-green: #98c576;
@@ -19,6 +39,10 @@ $color-footer: #9acb78;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
+    @include change-small-screen {
+      font-size: 26px;
+      line-height: 22px;
+    }
   }
 }
 .font-bold {
@@ -27,6 +51,10 @@ $color-footer: #9acb78;
 %container-padding {
   padding-left: 115px;
   padding-right: 115px;
+  @include change-small-screen {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .button-style {
   .orange-button {
@@ -49,7 +77,6 @@ $color-footer: #9acb78;
     }
   }
 }
-
 %special-promo-style {
   .promo-title {
     margin-left: 45px;
@@ -81,14 +108,9 @@ $color-footer: #9acb78;
     }
   }
 }
+// ------------------------------------------------------------------------------------------------ /end include, extend
 
-/* for Bootstrap */
-.no-margin {margin: 0 !important}
-.no-gutter > [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
-}
-/**/
+// -------------------------------------------------------------------------------------------------------------- GLOBAL
 .left {float: left;}
 .right {float: right;}
 a {
@@ -103,11 +125,20 @@ body {
 .container-fluid {
   padding: 0;
 }
+.container {
+  @include change-large-screen {
+    width: 1020px;
+  }
+}
+// --------------------------------------------------------------------------------------------------------- /end global
 
 // ------------------------------------------------------------------------------------------------- CONTAINER-FLUID-TOP
 #container-fluid-bg-top {
   background: url(../images/bg_header.png) no-repeat local;
   @include background-size(100% 80%);
+  @include change-small-screen {
+    @include background-size(100% 60%);
+  }
   // ------------------------------------------------------------------------------------------------------- TOP SECTION
   #top-section {
     color: #ffffff;
@@ -115,7 +146,7 @@ body {
       margin: 20px 0;
       font-size: 31px;
     }
-    // --------------------------------------------------------------------------------------------- list_with_tick_mark
+    // --------------------------------------------------------------------------------------------- list-with-tick-mark
     .list_with_tick_mark {
       ul {
         margin-top: 40px;
@@ -152,9 +183,15 @@ body {
           background-color: #ffffff;
           padding: 20px;
           height: 500px;
+          @include change-small-screen {
+            height: 600px;
+          }
           .card-content-last {
             margin-top: 100px;
             height: 100px;
+            @include change-small-screen {
+              margin-top: 110px;
+            }
             .card-image-inner {
               padding-top: 15px;
               padding-bottom: 30px;
@@ -162,6 +199,9 @@ body {
           }
           .card-content {
             height: 100px;
+            @include change-small-screen {
+              height: 130px;
+            }
             .card-image-inner {
               padding-top: 15px;
               padding-bottom: 30px;
@@ -184,6 +224,11 @@ body {
         position: absolute;
         top: 0;
         right: 50px;
+        @include change-small-screen {
+          max-width: 100px;
+          top: 10px;
+          right: 30px;
+        }
       }
     }
   }
@@ -199,6 +244,10 @@ body {
     background-color: $color-green;
     h2 {
       font-size: 26px;
+      @include change-small-screen {
+        font-size: 20px;
+        line-height: 22px;
+      }
     }
   }
   .sakura-text {
@@ -222,6 +271,11 @@ body {
     position: absolute;
     right: 0;
     top: -55px;
+    @include change-small-screen {
+      max-width: 100px;
+      top: -40px;
+      right: 30px;
+    }
   }
   .promo-title {
     margin-left: 0;
@@ -261,6 +315,10 @@ body {
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
+      @include change-small-screen {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
     ul {
       @extend %container-padding;
@@ -298,6 +356,10 @@ body {
       position: absolute;
       top: -50px;
       right: 120px;
+      @include change-small-screen {
+        max-width: 100px;
+        top: -20px;
+      }
     }
     .smaller-text {
       font-size: 26px;
@@ -354,18 +416,19 @@ body {
       font-size: 26px;
       padding-top: 35px;
       padding-bottom: 25px;
+      @include change-small-screen {
+        font-size: 22px;
+        line-height: 22px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 22px;
+      @include change-small-screen {
+        font-size: 16px;
+      }
     }
   }
 }
 
 
-// -------------------------------------------------------------------------------------------------------------- @media
-@media (min-width: 1200px) {
-  .container {
-    width: 1020px;
-  }
-}
