@@ -69,10 +69,11 @@ $color-footer: #9acb78;
     margin: 35px 0 15px 45px;
   }
   #counter {
-    padding: 10px 20px;
+    padding: 10px 0;
     margin: 0 auto;
     p {
       font-size: 31px;
+      text-align: center;
     }
     .figcaption-counter {
       font-size: 8px;
