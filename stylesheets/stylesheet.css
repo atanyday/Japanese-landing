@@ -67,109 +67,137 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Roboto";
   src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
-/* line 7, ../sass/stylesheet.scss */
+/* line 8, ../sass/stylesheet.scss */
 .green-text {
   color: #7ade34;
   font-weight: bold;
 }
 
-/* line 14, ../sass/stylesheet.scss */
-#container-fluid-bg-top #top-section .special-promo-section .promo-title, .special-promo-section-2 .promo-title {
-  margin-left: 45px;
+/* line 12, ../sass/stylesheet.scss */
+.green-background, #container-fluid-bg-sakura .sakura-title, #why-you-need-section .why-you-need-title, .whats-more-title {
+  background-color: #9acb78;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
-/* line 16, ../sass/stylesheet.scss */
-#container-fluid-bg-top #top-section .special-promo-section .promo-title h3, .special-promo-section-2 .promo-title h3 {
-  font-size: 26px;
-  margin-bottom: 15px;
+/* line 17, ../sass/stylesheet.scss */
+.green-background h2, #container-fluid-bg-sakura .sakura-title h2, #why-you-need-section .why-you-need-title h2, .whats-more-title h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
 }
-/* line 20, ../sass/stylesheet.scss */
-#container-fluid-bg-top #top-section .special-promo-section .promo-title .figcaption-promo, .special-promo-section-2 .promo-title .figcaption-promo {
-  font-size: 18px;
-}
+
 /* line 24, ../sass/stylesheet.scss */
-#container-fluid-bg-top #top-section .special-promo-section .orange-button, .special-promo-section-2 .orange-button {
+.font-bold {
+  font-weight: bold;
+}
+
+/* line 27, ../sass/stylesheet.scss */
+#container-fluid-bg-sakura .sakura-text p, #why-you-need-section .why-you-need-content ul, #container-fluid-bg-girl .girl-content, .whats-more-content {
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+/* line 32, ../sass/stylesheet.scss */
+.button-style .orange-button, #container-fluid-bg-top #top-section .special-promo-section .orange-button, .special-promo-section-2 .orange-button, #container-fluid-bg-girl .orange-button {
   cursor: pointer;
   background-image: url(../images/bg_button.png);
   background-size: cover;
   border: none;
   padding: 20px 40px 15px 30px;
   margin: 20px 0;
+  color: #ffffff;
 }
-/* line 31, ../sass/stylesheet.scss */
-#container-fluid-bg-top #top-section .special-promo-section .orange-button .btn-text-yes, .special-promo-section-2 .orange-button .btn-text-yes {
+/* line 40, ../sass/stylesheet.scss */
+.button-style .orange-button .btn-text-yes, #container-fluid-bg-top #top-section .special-promo-section .orange-button .btn-text-yes, .special-promo-section-2 .orange-button .btn-text-yes, #container-fluid-bg-girl .orange-button .btn-text-yes {
   font-weight: bold;
   font-size: 33px;
   padding-right: 20px;
   border-right: 3px solid #ffffff;
 }
-/* line 37, ../sass/stylesheet.scss */
-#container-fluid-bg-top #top-section .special-promo-section .orange-button .btn-text-add, .special-promo-section-2 .orange-button .btn-text-add {
+/* line 46, ../sass/stylesheet.scss */
+.button-style .orange-button .btn-text-add, #container-fluid-bg-top #top-section .special-promo-section .orange-button .btn-text-add, .special-promo-section-2 .orange-button .btn-text-add, #container-fluid-bg-girl .orange-button .btn-text-add {
   font-size: 18px;
   padding-left: 40px;
 }
-/* line 42, ../sass/stylesheet.scss */
+
+/* line 54, ../sass/stylesheet.scss */
+#container-fluid-bg-top #top-section .special-promo-section .promo-title, .special-promo-section-2 .promo-title {
+  margin-left: 45px;
+}
+/* line 56, ../sass/stylesheet.scss */
+#container-fluid-bg-top #top-section .special-promo-section .promo-title h3, .special-promo-section-2 .promo-title h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+/* line 60, ../sass/stylesheet.scss */
+#container-fluid-bg-top #top-section .special-promo-section .promo-title .figcaption-promo, .special-promo-section-2 .promo-title .figcaption-promo {
+  font-size: 18px;
+}
+/* line 64, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .price, .special-promo-section-2 .price {
   font-size: 31px;
 }
-/* line 45, ../sass/stylesheet.scss */
+/* line 67, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section .counter-title, .special-promo-section-2 .counter-title {
   font-size: 18px;
   margin: 35px 0 15px 45px;
 }
-/* line 50, ../sass/stylesheet.scss */
+/* line 71, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section #counter, .special-promo-section-2 #counter {
   padding: 10px 20px;
   margin: 0 auto;
 }
-/* line 53, ../sass/stylesheet.scss */
+/* line 74, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section #counter p, .special-promo-section-2 #counter p {
   font-size: 31px;
 }
-/* line 56, ../sass/stylesheet.scss */
+/* line 77, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .special-promo-section #counter .figcaption-counter, .special-promo-section-2 #counter .figcaption-counter {
   font-size: 8px;
 }
 
 /* for Bootstrap */
-/* line 63, ../sass/stylesheet.scss */
+/* line 84, ../sass/stylesheet.scss */
 .no-margin {
   margin: 0 !important;
 }
 
-/* line 64, ../sass/stylesheet.scss */
+/* line 85, ../sass/stylesheet.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
 /**/
-/* line 69, ../sass/stylesheet.scss */
+/* line 90, ../sass/stylesheet.scss */
 .left {
   float: left;
 }
 
-/* line 70, ../sass/stylesheet.scss */
+/* line 91, ../sass/stylesheet.scss */
 .right {
   float: right;
 }
 
-/* line 72, ../sass/stylesheet.scss */
+/* line 93, ../sass/stylesheet.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 76, ../sass/stylesheet.scss */
+/* line 97, ../sass/stylesheet.scss */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 18px;
 }
 
-/* line 80, ../sass/stylesheet.scss */
+/* line 101, ../sass/stylesheet.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 86, ../sass/stylesheet.scss */
+/* line 106, ../sass/stylesheet.scss */
 #container-fluid-bg-top {
   background: url(../images/bg_header.png) no-repeat local;
   -moz-background-size: 100% 80%;
@@ -177,39 +205,38 @@ body {
   -webkit-background-size: 100% 80%;
   background-size: 100% 80%;
 }
-/* line 90, ../sass/stylesheet.scss */
+/* line 110, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section {
   color: #ffffff;
 }
-/* line 92, ../sass/stylesheet.scss */
+/* line 112, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section h2 {
   margin: 20px 0;
   font-size: 31px;
 }
-/* line 98, ../sass/stylesheet.scss */
+/* line 118, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .list_with_tick_mark ul {
   margin-top: 40px;
   margin-bottom: 50px;
-  vertical-align: middle;
 }
-/* line 103, ../sass/stylesheet.scss */
+/* line 122, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .list_with_tick_mark ul li p {
   display: inline-block;
 }
-/* line 114, ../sass/stylesheet.scss */
+/* line 134, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section {
   margin-top: 40px;
 }
-/* line 116, ../sass/stylesheet.scss */
+/* line 136, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 {
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 119, ../sass/stylesheet.scss */
+/* line 139, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card-image {
   margin-bottom: 20px;
 }
-/* line 122, ../sass/stylesheet.scss */
+/* line 142, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -219,70 +246,109 @@ body {
   padding: 20px;
   min-height: 440px;
 }
-/* line 128, ../sass/stylesheet.scss */
+/* line 148, ../sass/stylesheet.scss */
 #container-fluid-bg-top #top-section .cards-section .col-md-4 .card .card-image-inner {
   padding-top: 15px;
   padding-bottom: 30px;
 }
 
-/* line 142, ../sass/stylesheet.scss */
+/* line 160, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura {
   background: url(../images/bg_sakura.png) no-repeat local;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
-/* line 145, ../sass/stylesheet.scss */
+/* line 163, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-title {
   background-color: #98c576;
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 25px;
 }
-/* line 150, ../sass/stylesheet.scss */
+/* line 166, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-title h2 {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
+  font-size: 26px;
 }
-/* line 158, ../sass/stylesheet.scss */
+/* line 171, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-text p {
   font-size: 20px;
-  padding-left: 115px;
-  padding-right: 115px;
   padding-bottom: 45px;
   line-height: 24px;
 }
 
-/* line 170, ../sass/stylesheet.scss */
+/* line 182, ../sass/stylesheet.scss */
 .special-promo-section-2 {
   text-align: center;
 }
-/* line 173, ../sass/stylesheet.scss */
+/* line 186, ../sass/stylesheet.scss */
 .special-promo-section-2 .promo-title {
   margin-left: 0;
 }
-/* line 175, ../sass/stylesheet.scss */
+/* line 188, ../sass/stylesheet.scss */
 .special-promo-section-2 .promo-title h3 {
   margin-top: 50px;
   margin-bottom: 15px;
 }
-/* line 180, ../sass/stylesheet.scss */
-.special-promo-section-2 .orange-button {
-  color: #ffffff;
-}
-/* line 183, ../sass/stylesheet.scss */
+/* line 193, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 {
   text-align: center;
-  margin-bottom: 45px;
 }
-/* line 186, ../sass/stylesheet.scss */
+/* line 195, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 p {
   font-size: 31px;
 }
-/* line 189, ../sass/stylesheet.scss */
+/* line 198, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 .figcaption-counter-2 {
   font-size: 8px;
+}
+
+/* line 206, ../sass/stylesheet.scss */
+#why-you-need-section {
+  margin-bottom: 20px;
+}
+/* line 208, ../sass/stylesheet.scss */
+#why-you-need-section .why-you-need-title {
+  margin-bottom: 20px;
+}
+/* line 213, ../sass/stylesheet.scss */
+#why-you-need-section .why-you-need-content h3 {
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 228, ../sass/stylesheet.scss */
+#container-fluid-bg-girl {
+  background: url(../images/bg_girl.png) no-repeat local;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/* line 235, ../sass/stylesheet.scss */
+#container-fluid-bg-girl .girl-content {
+  font-size: 22px;
+}
+/* line 238, ../sass/stylesheet.scss */
+#container-fluid-bg-girl .girl-content .orange-button {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 248, ../sass/stylesheet.scss */
+.whats-more-title {
+  margin-top: 0;
+}
+/* line 251, ../sass/stylesheet.scss */
+.whats-more-title .smaller-text {
+  font-size: 26px;
+}
+
+/* line 255, ../sass/stylesheet.scss */
+.whats-more-content {
+  padding-bottom: 40px;
 }

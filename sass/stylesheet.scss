@@ -3,24 +3,32 @@
 @include font-face("Roboto", font-files("Roboto-Regular.ttf"));
 $color-light-green: #7ade34;
 $color-green: #98c576;
+$color-why-you-need: #9acb78;
 
 .green-text {
   color: $color-light-green;
   font-weight: bold;
 }
-
-// ----------------------------------------------------------------------------------------------- special-promo-section
-%special-promo-style {
-  .promo-title {
-    margin-left: 45px;
-    h3 {
-      font-size: 26px;
-      margin-bottom: 15px;
-    }
-    .figcaption-promo {
-      font-size: 18px;
-    }
+.green-background {
+  background-color: $color-why-you-need;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
   }
+}
+.font-bold {
+  font-weight: bold;
+}
+%container-padding {
+  padding-left: 115px;
+  padding-right: 115px;
+}
+.button-style {
   .orange-button {
     cursor: pointer;
     background-image: url(../images/bg_button.png);
@@ -28,6 +36,7 @@ $color-green: #98c576;
     border: none;
     padding: 20px 40px 15px 30px;
     margin: 20px 0;
+    color: #ffffff;
     .btn-text-yes {
       font-weight: bold;
       font-size: 33px;
@@ -39,6 +48,19 @@ $color-green: #98c576;
       padding-left: 40px;
     }
   }
+}
+
+%special-promo-style {
+  .promo-title {
+    margin-left: 45px;
+    h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    .figcaption-promo {
+      font-size: 18px;
+    }
+  }
   .price {
     font-size: 31px;
   }
@@ -46,7 +68,6 @@ $color-green: #98c576;
     font-size: 18px;
     margin: 35px 0 15px 45px;
   }
-  // -------------------------------------------------------------------------------------------------------- COUNT DOWN
   #counter {
     padding: 10px 20px;
     margin: 0 auto;
@@ -81,7 +102,6 @@ body {
   padding: 0;
 }
 
-
 // ------------------------------------------------------------------------------------------------- CONTAINER-FLUID-TOP
 #container-fluid-bg-top {
   background: url(../images/bg_header.png) no-repeat local;
@@ -98,7 +118,6 @@ body {
       ul {
         margin-top: 40px;
         margin-bottom: 50px;
-        vertical-align:middle;
         li {
           p {
             display: inline-block;
@@ -109,6 +128,7 @@ body {
     // ------------------------------------------------------------------------------------------- special-promo-section
     .special-promo-section {
       @extend %special-promo-style;
+      @extend .button-style;
     }
     // --------------------------------------------------------------------------------------------------- CARDS SECTION
     .cards-section {
@@ -134,41 +154,34 @@ body {
     }
   }
 }
-// -------------------------------------------------------------------------------------------- /end container-fluid-top
-
 
 
 // ---------------------------------------------------------------------------------------------- CONTAINER-FLUID-SAKURA
 #container-fluid-bg-sakura {
   background: url(../images/bg_sakura.png) no-repeat local;
-  @include background-size(100%);
+  @include background-size(cover);
   .sakura-title {
+    @extend .green-background;
     background-color: $color-green;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
     h2 {
-      font-size: 25px;
-      font-weight: bold;
-      text-align: center;
-      color: #ffffff;
+      font-size: 26px;
     }
   }
   .sakura-text {
     p {
+      @extend %container-padding;
       font-size: 20px;
-      padding-left: 115px;
-      padding-right: 115px;
       padding-bottom: 45px;
       line-height: 24px;
     }
   }
 }
-// ----------------------------------------------------------------------------------------- /end container-fluid-sakura
+
 
 // --------------------------------------------------------------------------------------------- SPECIAL-PROMO-SECTION-2
 .special-promo-section-2 {
   @extend %special-promo-style;
+  @extend .button-style;
   text-align: center;
   .promo-title {
     margin-left: 0;
@@ -177,12 +190,8 @@ body {
       margin-bottom: 15px;
     }
   }
-  .orange-button {
-    color: #ffffff;
-  }
   #counter-2 {
     text-align: center;
-    margin-bottom: 45px;
     p {
       font-size: 31px;
     }
@@ -191,5 +200,59 @@ body {
     }
   }
 }
-// ------------------------------------------------------------------------------------------ /end special-promo-section
 
+
+// -------------------------------------------------------------------------------------------------------- WHY YOU NEED
+#why-you-need-section {
+  margin-bottom: 20px;
+  .why-you-need-title {
+    @extend .green-background;
+    margin-bottom: 20px;
+  }
+  .why-you-need-content {
+    h3 {
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    ul {
+      @extend %container-padding;
+    }
+  }
+}
+
+
+// ------------------------------------------------------------------------------------------------ CONTAINER-FLUID-GIRL
+#container-fluid-bg-girl {
+  background: url(../images/bg_girl.png) no-repeat local;
+  @include background-size(cover);
+  @extend .button-style;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  .girl-content {
+    @extend %container-padding;
+    font-size: 22px;
+    .orange-button {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+}
+// ------------------------------------------------------------------------------------------- /end container-fluid-girl
+
+
+// --------------------------------------------------------------------------------------------- SPECIAL-PROMO-SECTION-3
+.whats-more-title {
+  @extend .green-background;
+  margin-top: 0;
+  .smaller-text {
+    font-size: 26px;
+  }
+}
+.whats-more-content {
+  padding-bottom: 40px;
+  @extend %container-padding;
+}
