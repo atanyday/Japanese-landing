@@ -74,14 +74,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 12, ../sass/stylesheet.scss */
-.green-background, #container-fluid-bg-sakura .sakura-title, #why-you-need-section .why-you-need-title, .whats-more-title {
+.green-background, #container-fluid-bg-sakura .sakura-title, #why-you-need-section .why-you-need-title, #whats-more .whats-more-title {
   background-color: #9acb78;
   padding: 20px;
   margin-top: 30px;
   margin-bottom: 25px;
 }
 /* line 17, ../sass/stylesheet.scss */
-.green-background h2, #container-fluid-bg-sakura .sakura-title h2, #why-you-need-section .why-you-need-title h2, .whats-more-title h2 {
+.green-background h2, #container-fluid-bg-sakura .sakura-title h2, #why-you-need-section .why-you-need-title h2, #whats-more .whats-more-title h2 {
   font-size: 35px;
   font-weight: bold;
   color: #ffffff;
@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 27, ../sass/stylesheet.scss */
-#container-fluid-bg-sakura .sakura-text p, #why-you-need-section .why-you-need-content ul, #container-fluid-bg-girl .girl-content, .whats-more-content {
+#container-fluid-bg-sakura .sakura-text p, #why-you-need-section .why-you-need-content ul, #container-fluid-bg-girl .girl-content, #whats-more .whats-more-content, #whats-more .reviews-content {
   padding-left: 115px;
   padding-right: 115px;
 }
@@ -289,27 +289,32 @@ body {
   margin-bottom: 15px;
 }
 /* line 193, ../sass/stylesheet.scss */
+.special-promo-section-2 .counter-title {
+  font-size: 18px;
+  margin: 35px 0 15px;
+}
+/* line 197, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 {
   text-align: center;
 }
-/* line 195, ../sass/stylesheet.scss */
+/* line 199, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 p {
   font-size: 31px;
 }
-/* line 198, ../sass/stylesheet.scss */
+/* line 202, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 .figcaption-counter-2 {
   font-size: 8px;
 }
 
-/* line 206, ../sass/stylesheet.scss */
+/* line 210, ../sass/stylesheet.scss */
 #why-you-need-section {
   margin-bottom: 20px;
 }
-/* line 208, ../sass/stylesheet.scss */
+/* line 212, ../sass/stylesheet.scss */
 #why-you-need-section .why-you-need-title {
   margin-bottom: 20px;
 }
-/* line 213, ../sass/stylesheet.scss */
+/* line 217, ../sass/stylesheet.scss */
 #why-you-need-section .why-you-need-content h3 {
   font-weight: bold;
   font-size: 26px;
@@ -318,7 +323,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 228, ../sass/stylesheet.scss */
+/* line 232, ../sass/stylesheet.scss */
 #container-fluid-bg-girl {
   background: url(../images/bg_girl.png) no-repeat local;
   -moz-background-size: cover;
@@ -329,26 +334,51 @@ body {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 235, ../sass/stylesheet.scss */
+/* line 239, ../sass/stylesheet.scss */
 #container-fluid-bg-girl .girl-content {
   font-size: 22px;
 }
-/* line 238, ../sass/stylesheet.scss */
+/* line 242, ../sass/stylesheet.scss */
 #container-fluid-bg-girl .girl-content .orange-button {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 248, ../sass/stylesheet.scss */
-.whats-more-title {
+/* line 252, ../sass/stylesheet.scss */
+#whats-more .whats-more-title {
   margin-top: 0;
 }
-/* line 251, ../sass/stylesheet.scss */
-.whats-more-title .smaller-text {
+/* line 255, ../sass/stylesheet.scss */
+#whats-more .whats-more-title .smaller-text {
   font-size: 26px;
 }
-
-/* line 255, ../sass/stylesheet.scss */
-.whats-more-content {
+/* line 259, ../sass/stylesheet.scss */
+#whats-more .whats-more-content {
   padding-bottom: 40px;
+}
+/* line 265, ../sass/stylesheet.scss */
+#whats-more .reviews-content .reviews-section {
+  margin-bottom: 80px;
+}
+/* line 267, ../sass/stylesheet.scss */
+#whats-more .reviews-content .reviews-section .name {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/* line 272, ../sass/stylesheet.scss */
+#whats-more .reviews-content .reviews-section-last {
+  margin-bottom: 0;
+}
+
+/* line 278, ../sass/stylesheet.scss */
+.special-promo-section-2 {
+  text-align: center;
+}
+/* line 283, ../sass/stylesheet.scss */
+.special-promo-section-2 #counter-3 p {
+  font-size: 31px;
+}
+/* line 286, ../sass/stylesheet.scss */
+.special-promo-section-2 #counter-3 .figcaption-counter-3 {
+  font-size: 8px;
 }

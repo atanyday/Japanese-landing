@@ -190,6 +190,10 @@ body {
       margin-bottom: 15px;
     }
   }
+  .counter-title {
+    font-size: 18px;
+    margin: 35px 0 15px 0;
+  }
   #counter-2 {
     text-align: center;
     p {
@@ -241,18 +245,46 @@ body {
     }
   }
 }
-// ------------------------------------------------------------------------------------------- /end container-fluid-girl
 
 
-// --------------------------------------------------------------------------------------------- SPECIAL-PROMO-SECTION-3
-.whats-more-title {
-  @extend .green-background;
-  margin-top: 0;
-  .smaller-text {
-    font-size: 26px;
+// ------------------------------------------------------------------------------------------------------------- REVIEWS
+#whats-more {
+  .whats-more-title {
+    @extend .green-background;
+    margin-top: 0;
+    .smaller-text {
+      font-size: 26px;
+    }
+  }
+  .whats-more-content {
+    @extend %container-padding;
+    padding-bottom: 40px;
+  }
+  .reviews-content {
+    @extend %container-padding;
+    .reviews-section {
+      margin-bottom: 80px;
+      .name {
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+    .reviews-section-last {
+      margin-bottom: 0;
+    }
   }
 }
-.whats-more-content {
-  padding-bottom: 40px;
-  @extend %container-padding;
+
+.special-promo-section-2 {
+  @extend %special-promo-style;
+  @extend .button-style;
+  text-align: center;
+  #counter-3 {
+    p {
+      font-size: 31px;
+    }
+    .figcaption-counter-3 {
+      font-size: 8px;
+    }
+  }
 }
