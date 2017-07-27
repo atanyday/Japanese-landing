@@ -1,0 +1,195 @@
+@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius";
+
+@include font-face("Roboto", font-files("Roboto-Regular.ttf"));
+$color-light-green: #7ade34;
+$color-green: #98c576;
+
+.green-text {
+  color: $color-light-green;
+  font-weight: bold;
+}
+
+// ----------------------------------------------------------------------------------------------- special-promo-section
+%special-promo-style {
+  .promo-title {
+    margin-left: 45px;
+    h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    .figcaption-promo {
+      font-size: 18px;
+    }
+  }
+  .orange-button {
+    cursor: pointer;
+    background-image: url(../images/bg_button.png);
+    background-size: cover;
+    border: none;
+    padding: 20px 40px 15px 30px;
+    margin: 20px 0;
+    .btn-text-yes {
+      font-weight: bold;
+      font-size: 33px;
+      padding-right: 20px;
+      border-right: 3px solid #ffffff;
+    }
+    .btn-text-add {
+      font-size: 18px;
+      padding-left: 40px;
+    }
+  }
+  .price {
+    font-size: 31px;
+  }
+  .counter-title {
+    font-size: 18px;
+    margin: 35px 0 15px 45px;
+  }
+  // -------------------------------------------------------------------------------------------------------- COUNT DOWN
+  #counter {
+    padding: 10px 20px;
+    margin: 0 auto;
+    p {
+      font-size: 31px;
+    }
+    .figcaption-counter {
+      font-size: 8px;
+    }
+  }
+}
+
+/* for Bootstrap */
+.no-margin {margin: 0 !important}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+/**/
+.left {float: left;}
+.right {float: right;}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 18px;
+}
+.container-fluid {
+  padding: 0;
+}
+
+
+// ------------------------------------------------------------------------------------------------- CONTAINER-FLUID-TOP
+#container-fluid-bg-top {
+  background: url(../images/bg_header.png) no-repeat local;
+  @include background-size(100% 80%);
+  // ------------------------------------------------------------------------------------------------------- TOP SECTION
+  #top-section {
+    color: #ffffff;
+    h2 {
+      margin: 20px 0;
+      font-size: 31px;
+    }
+    // --------------------------------------------------------------------------------------------- list_with_tick_mark
+    .list_with_tick_mark {
+      ul {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        vertical-align:middle;
+        li {
+          p {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    // ------------------------------------------------------------------------------------------- special-promo-section
+    .special-promo-section {
+      @extend %special-promo-style;
+    }
+    // --------------------------------------------------------------------------------------------------- CARDS SECTION
+    .cards-section {
+      margin-top: 40px;
+      .col-md-4 {
+        padding-left: 4px;
+        padding-right: 4px;
+        .card-image {
+          margin-bottom: 20px;
+        }
+        .card {
+          @include border-radius(10px);
+          color: #000000;
+          background-color: #ffffff;
+          padding: 20px;
+          min-height: 440px;
+          .card-image-inner {
+            padding-top: 15px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+// -------------------------------------------------------------------------------------------- /end container-fluid-top
+
+
+
+// ---------------------------------------------------------------------------------------------- CONTAINER-FLUID-SAKURA
+#container-fluid-bg-sakura {
+  background: url(../images/bg_sakura.png) no-repeat local;
+  @include background-size(100%);
+  .sakura-title {
+    background-color: $color-green;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .sakura-text {
+    p {
+      font-size: 20px;
+      padding-left: 115px;
+      padding-right: 115px;
+      padding-bottom: 45px;
+      line-height: 24px;
+    }
+  }
+}
+// ----------------------------------------------------------------------------------------- /end container-fluid-sakura
+
+// --------------------------------------------------------------------------------------------- SPECIAL-PROMO-SECTION-2
+.special-promo-section-2 {
+  @extend %special-promo-style;
+  text-align: center;
+  .promo-title {
+    margin-left: 0;
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+  }
+  .orange-button {
+    color: #ffffff;
+  }
+  #counter-2 {
+    text-align: center;
+    margin-bottom: 45px;
+    p {
+      font-size: 31px;
+    }
+    .figcaption-counter-2 {
+      font-size: 8px;
+    }
+  }
+}
+// ------------------------------------------------------------------------------------------ /end special-promo-section
+
