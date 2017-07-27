@@ -251,8 +251,26 @@ body {
   padding-top: 15px;
   padding-bottom: 30px;
 }
-
+/* line 156, ../sass/stylesheet.scss */
+#container-fluid-bg-top #top-section .header-image-section {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 /* line 160, ../sass/stylesheet.scss */
+#container-fluid-bg-top #top-section .header-image-section .image-premium {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 165, ../sass/stylesheet.scss */
+#container-fluid-bg-top #top-section .header-image-section .discount-image {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+/* line 176, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura {
   background: url(../images/bg_sakura.png) no-repeat local;
   -moz-background-size: cover;
@@ -260,61 +278,68 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 163, ../sass/stylesheet.scss */
+/* line 179, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-title {
   background-color: #98c576;
 }
-/* line 166, ../sass/stylesheet.scss */
+/* line 182, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-title h2 {
   font-size: 26px;
 }
-/* line 171, ../sass/stylesheet.scss */
+/* line 187, ../sass/stylesheet.scss */
 #container-fluid-bg-sakura .sakura-text p {
   font-size: 20px;
   padding-bottom: 45px;
   line-height: 24px;
 }
 
-/* line 182, ../sass/stylesheet.scss */
+/* line 198, ../sass/stylesheet.scss */
 .special-promo-section-2 {
+  position: relative;
   text-align: center;
 }
-/* line 186, ../sass/stylesheet.scss */
+/* line 203, ../sass/stylesheet.scss */
+.special-promo-section-2 .discount-image-2 {
+  position: absolute;
+  right: 0;
+  top: -55px;
+}
+/* line 208, ../sass/stylesheet.scss */
 .special-promo-section-2 .promo-title {
   margin-left: 0;
 }
-/* line 188, ../sass/stylesheet.scss */
+/* line 210, ../sass/stylesheet.scss */
 .special-promo-section-2 .promo-title h3 {
   margin-top: 50px;
   margin-bottom: 15px;
 }
-/* line 193, ../sass/stylesheet.scss */
+/* line 215, ../sass/stylesheet.scss */
 .special-promo-section-2 .counter-title {
   font-size: 18px;
-  margin: 35px 0 15px;
+  margin: 35px 0 15px 0;
 }
-/* line 197, ../sass/stylesheet.scss */
+/* line 219, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 {
   text-align: center;
 }
-/* line 199, ../sass/stylesheet.scss */
+/* line 221, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 p {
   font-size: 31px;
 }
-/* line 202, ../sass/stylesheet.scss */
+/* line 224, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-2 .figcaption-counter-2 {
   font-size: 8px;
 }
 
-/* line 210, ../sass/stylesheet.scss */
+/* line 232, ../sass/stylesheet.scss */
 #why-you-need-section {
   margin-bottom: 20px;
 }
-/* line 212, ../sass/stylesheet.scss */
+/* line 234, ../sass/stylesheet.scss */
 #why-you-need-section .why-you-need-title {
   margin-bottom: 20px;
 }
-/* line 217, ../sass/stylesheet.scss */
+/* line 239, ../sass/stylesheet.scss */
 #why-you-need-section .why-you-need-content h3 {
   font-weight: bold;
   font-size: 26px;
@@ -323,7 +348,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 232, ../sass/stylesheet.scss */
+/* line 254, ../sass/stylesheet.scss */
 #container-fluid-bg-girl {
   background: url(../images/bg_girl.png) no-repeat local;
   -moz-background-size: cover;
@@ -334,51 +359,93 @@ body {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 239, ../sass/stylesheet.scss */
+/* line 261, ../sass/stylesheet.scss */
 #container-fluid-bg-girl .girl-content {
   font-size: 22px;
 }
-/* line 242, ../sass/stylesheet.scss */
+/* line 264, ../sass/stylesheet.scss */
 #container-fluid-bg-girl .girl-content .orange-button {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 252, ../sass/stylesheet.scss */
+/* line 274, ../sass/stylesheet.scss */
 #whats-more .whats-more-title {
   margin-top: 0;
+  position: relative;
 }
-/* line 255, ../sass/stylesheet.scss */
+/* line 278, ../sass/stylesheet.scss */
+#whats-more .whats-more-title .discount-image-3 {
+  position: absolute;
+  top: -50px;
+  right: 120px;
+}
+/* line 283, ../sass/stylesheet.scss */
 #whats-more .whats-more-title .smaller-text {
   font-size: 26px;
 }
-/* line 259, ../sass/stylesheet.scss */
+/* line 287, ../sass/stylesheet.scss */
 #whats-more .whats-more-content {
   padding-bottom: 40px;
 }
-/* line 265, ../sass/stylesheet.scss */
+/* line 293, ../sass/stylesheet.scss */
 #whats-more .reviews-content .reviews-section {
   margin-bottom: 80px;
 }
-/* line 267, ../sass/stylesheet.scss */
+/* line 295, ../sass/stylesheet.scss */
 #whats-more .reviews-content .reviews-section .name {
   font-weight: bold;
   padding-bottom: 10px;
 }
-/* line 272, ../sass/stylesheet.scss */
+/* line 300, ../sass/stylesheet.scss */
 #whats-more .reviews-content .reviews-section-last {
   margin-bottom: 0;
 }
 
-/* line 278, ../sass/stylesheet.scss */
+/* line 306, ../sass/stylesheet.scss */
 .special-promo-section-2 {
   text-align: center;
 }
-/* line 283, ../sass/stylesheet.scss */
+/* line 311, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-3 p {
   font-size: 31px;
 }
-/* line 286, ../sass/stylesheet.scss */
+/* line 314, ../sass/stylesheet.scss */
 .special-promo-section-2 #counter-3 .figcaption-counter-3 {
   font-size: 8px;
+}
+
+/* line 322, ../sass/stylesheet.scss */
+#footer {
+  background-color: #9acb78;
+  color: #ffffff;
+  margin-top: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 328, ../sass/stylesheet.scss */
+#footer img {
+  padding-right: 115px;
+}
+/* line 331, ../sass/stylesheet.scss */
+#footer .footer-text {
+  padding-left: 30px;
+}
+/* line 333, ../sass/stylesheet.scss */
+#footer .footer-text h1 {
+  font-weight: bold;
+  font-size: 26px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+/* line 339, ../sass/stylesheet.scss */
+#footer .footer-text p {
+  font-size: 18px;
+}
+
+@media (min-width: 1200px) {
+  /* line 348, ../sass/stylesheet.scss */
+  .container {
+    width: 1020px;
+  }
 }
