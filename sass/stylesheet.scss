@@ -57,6 +57,9 @@ $color-footer: #9acb78;
   }
 }
 .button-style {
+  @include change-extra-small-screen {
+    text-align: center;
+  }
   .orange-button {
     cursor: pointer;
     background-image: url(../images/bg_button.png);
@@ -98,6 +101,9 @@ $color-footer: #9acb78;
   #counter {
     padding: 10px 0;
     margin: 0 auto;
+    @include change-extra-small-screen {
+      margin-left: 30%;
+    }
     p {
       font-size: 31px;
       text-align: center;
@@ -139,12 +145,25 @@ body {
   @include change-small-screen {
     @include background-size(100% 60%);
   }
+  @include change-extra-small-screen {
+    @include background-size(cover);
+  }
   // ------------------------------------------------------------------------------------------------------- TOP SECTION
   #top-section {
     color: #ffffff;
     h2 {
       margin: 20px 0;
       font-size: 31px;
+      @include change-extra-small-screen {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    p {
+      @include change-extra-small-screen {
+        font-size: 14px;
+        text-align: center;
+      }
     }
     // --------------------------------------------------------------------------------------------- list-with-tick-mark
     .list_with_tick_mark {
@@ -290,6 +309,9 @@ body {
   }
   #counter-2 {
     text-align: center;
+    @include change-extra-small-screen {
+      margin-left: 30%;
+    }
     p {
       font-size: 31px;
     }
@@ -389,6 +411,9 @@ body {
   @extend .button-style;
   text-align: center;
   #counter-3 {
+    @include change-extra-small-screen {
+      margin-left: 30%;
+    }
     p {
       font-size: 31px;
     }
@@ -408,6 +433,10 @@ body {
   padding-bottom: 30px;
   img {
     padding-right: 115px;
+    @include change-extra-small-screen {
+      padding: 0;
+      text-align: center;
+    }
   }
   .footer-text {
     padding-left: 30px;
