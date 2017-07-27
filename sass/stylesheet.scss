@@ -17,13 +17,18 @@
     @content;
   }
 }
+@mixin change-mobile-screen {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
 // --------------------------------------------------------------------------------------------------------- /end mixins
 
 // ----------------------------------------------------------------------------------------------------- INCLUDE, EXTEND
 @include font-face("Roboto", font-files("Roboto-Regular.ttf"));
 $color-light-green: #7ade34;
-$color-green: #98c576;
 $color-footer: #9acb78;
+$color-green: #98c576;
 
 .green-text {
   color: $color-light-green;
@@ -141,13 +146,13 @@ body {
 // ------------------------------------------------------------------------------------------------- CONTAINER-FLUID-TOP
 #container-fluid-bg-top {
   background: url(../images/bg_header.png) no-repeat local;
-  @include background-size(100% 80%);
-  @include change-small-screen {
-    @include background-size(100% 60%);
-  }
-  @include change-extra-small-screen {
-    @include background-size(cover);
-  }
+  //@include background-size(100% 80%);
+  //@include change-small-screen {
+  //  @include background-size(100% 60%);
+  //}
+  //@include change-extra-small-screen {
+  //  @include background-size(cover);
+  //}
   // ------------------------------------------------------------------------------------------------------- TOP SECTION
   #top-section {
     color: #ffffff;
@@ -162,7 +167,6 @@ body {
     p {
       @include change-extra-small-screen {
         font-size: 14px;
-        text-align: center;
       }
     }
     // --------------------------------------------------------------------------------------------- list-with-tick-mark
@@ -195,6 +199,9 @@ body {
         padding-right: 4px;
         .card-image {
           margin-bottom: 20px;
+          @include change-mobile-screen {
+            margin-bottom: 0;
+          }
         }
         .card {
           @include border-radius(10px);
@@ -205,11 +212,17 @@ body {
           @include change-small-screen {
             height: 600px;
           }
+          @include change-mobile-screen {
+            height: 450px;
+          }
           .card-content-last {
             margin-top: 100px;
             height: 100px;
             @include change-small-screen {
               margin-top: 110px;
+            }
+            @include change-mobile-screen {
+              margin-top: 90px;
             }
             .card-image-inner {
               padding-top: 15px;
@@ -221,10 +234,19 @@ body {
             @include change-small-screen {
               height: 130px;
             }
+            @include change-mobile-screen {
+              height: 90px;
+            }
             .card-image-inner {
               padding-top: 15px;
               padding-bottom: 30px;
             }
+          }
+        }
+        .card-2 {
+          @extend .card;
+          @include change-mobile-screen {
+            height: 300px;
           }
         }
       }
