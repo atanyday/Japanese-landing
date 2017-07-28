@@ -1,4 +1,4 @@
-@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius", "compass/css3/animation";
+@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius";
 
 
 // -------------------------------------------------------------------------------------------------------------- MIXINS
@@ -155,7 +155,7 @@ $color-green: #98c576;
       margin: 15px 0!important;
     }
   }
-  .counter {
+  #counter {
     padding: 10px 0;
     margin: 0 auto;
     position: relative;
@@ -183,8 +183,6 @@ $color-green: #98c576;
     }
   }
 }
-
-
 // ------------------------------------------------------------------------------------------------ /end include, extend
 
 // -------------------------------------------------------------------------------------------------------------- GLOBAL
@@ -212,29 +210,8 @@ body {
 // ------------------------------------------------------------------------------------------------- CONTAINER-FLUID-TOP
 #container-fluid-bg-top {
   background: url(../images/bg_header.jpg) no-repeat local;
-  @include change-mobile-screen {
-    background-position: center top;
-  }
   // ------------------------------------------------------------------------------------------------------- TOP SECTION
   #top-section {
-    .mobile-hidden-header {
-      display: block;
-      @include change-mobile-screen {
-        display: none;
-      }
-    }
-    .mobile-visible-header {
-      display: none;
-      @include change-mobile-screen {
-        display: block;
-      }
-      .header-image-section {
-        margin-top: 20px;
-        .discount-image {
-          right: 10px;
-        }
-      }
-    }
     color: #ffffff;
     h2 {
       margin: 20px 0;
@@ -639,14 +616,3 @@ body {
 }
 
 
-// ------------------------------------------------------------------------------------------------------ ROTATING IMAGE
-.discount-image,
-.discount-image-2,
-.discount-image-3 {
-  -webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

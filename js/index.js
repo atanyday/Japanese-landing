@@ -29,6 +29,11 @@ function upTime(countTo) {
     document.getElementById('minutes-3').firstChild.nodeValue = mins;
     document.getElementById('seconds-3').firstChild.nodeValue = secs;
 
+    document.getElementById('days-mobile').firstChild.nodeValue = days;
+    document.getElementById('hours-mobile').firstChild.nodeValue = hours;
+    document.getElementById('minutes-mobile').firstChild.nodeValue = mins;
+    document.getElementById('seconds-mobile').firstChild.nodeValue = secs;
+
     clearTimeout(upTime.to);
     upTime.to=setTimeout(function(){ upTime(countTo); },1000);
 }
