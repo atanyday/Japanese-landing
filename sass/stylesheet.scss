@@ -230,6 +230,18 @@ body {
       }
       .header-image-section {
         margin-top: 20px;
+        position: relative;
+        .rotation-price-mobile {
+          position: absolute;
+          top: 45px;
+          right: 38px;
+          z-index: 10;
+          p {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 20px;
+          }
+        }
         .discount-image {
           right: 10px;
         }
@@ -349,6 +361,29 @@ body {
         top: 0;
         left: 0;
       }
+      .rotation-price {
+        position: absolute;
+        top: 40px;
+        right: 87px;
+        z-index: 10;
+        @include change-small-screen {
+          top: 42px;
+          right: 60px;
+        }
+        @include change-extra-small-screen {
+          top: 47px;
+          right: 33%;
+        }
+        p {
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 30px;
+          @include change-small-screen {
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+      }
       .discount-image {
         position: absolute;
         top: 0;
@@ -357,6 +392,10 @@ body {
           max-width: 100px;
           top: 10px;
           right: 30px;
+        }
+        @include change-extra-small-screen {
+          top: 15px;
+          right: 28%;
         }
       }
     }
@@ -399,6 +438,29 @@ body {
   @extend %special-promo-style;
   @extend .button-style;
   text-align: center;
+  .rotation-price-2 {
+    position: absolute;
+    top: -10px;
+    right: 39px;
+    z-index: 10;
+    @include change-small-screen {
+      top: -10px;
+      right: 60px;
+    }
+    @include change-mobile-screen {
+      display: none;
+    }
+    p {
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 30px;
+      @include change-small-screen {
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
+  }
   .discount-image-2 {
     position: absolute;
     right: 0;
@@ -523,6 +585,29 @@ body {
     @extend .green-background;
     margin-top: 0;
     position: relative;
+    .rotation-price-3 {
+      position: absolute;
+      top: -10px;
+      right: 158px;
+      z-index: 10;
+      @include change-small-screen {
+        top: 12px;
+        right: 150px;
+      }
+      @include change-mobile-screen {
+        display: none;
+      }
+      p {
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 30px;
+        @include change-small-screen {
+          font-size: 20px;
+          line-height: 18px;
+        }
+      }
+    }
     .discount-image-3 {
       position: absolute;
       top: -50px;
