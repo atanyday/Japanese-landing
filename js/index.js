@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------------------------------------------------- COUNTER
 window.onload=function() {
     // Month,Day,Year,Hour,Minute,Second
-    upTime('august,04,2017,00:00:00');
+    upTime('august,07,2018,00:00:00');
 };
 
 function upTime(countTo) {
