@@ -22,14 +22,14 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="compile &quot;/Users/macbookpro/Downloads/Rich Peach - test/Japanese&quot; $UnixSeparators($FilePath$)$" />
+      <option name="arguments" value="compile &quot;$FileParentDir$&quot; $UnixSeparators($FilePath$)$" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" value="Compiles .scss files into .css files using compass" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="scss" />
       <option name="immediateSync" value="true" />
       <option name="name" value="Compass SCSS" />
-      <option name="output" value="$PROJECT_DIR$" />
+      <option name="output" value="$FileParentDir$" />
       <option name="outputFilters">
         <array />
       </option>
@@ -38,7 +38,7 @@
       <option name="program" value="/usr/local/bin/compass" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
-      <option name="workingDir" value="$PROJECT_DIR$" />
+      <option name="workingDir" value="$FileParentDir$" />
       <envs />
     </TaskOptions>
   </component>

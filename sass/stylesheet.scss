@@ -174,7 +174,7 @@ $color-green: #98c576;
         font-size: 22px;
       }
     }
-    .figcaption-counter {
+    .counter-caption {
       font-size: 8px;
       text-align: center;
       @include change-mobile-screen {
@@ -210,7 +210,7 @@ body {
 // --------------------------------------------------------------------------------------------------------- /end global
 
 // ------------------------------------------------------------------------------------------------- CONTAINER-FLUID-TOP
-#container-fluid-bg-top {
+#header-section {
   background: url(../images/bg_header.jpg) no-repeat local;
   @include change-mobile-screen {
     background-position: center top;
@@ -231,7 +231,7 @@ body {
       .header-image-section {
         margin-top: 20px;
         position: relative;
-        .rotation-price-mobile {
+        .animated-img-price-mobile {
           position: absolute;
           top: 45px;
           right: 38px;
@@ -242,7 +242,7 @@ body {
             line-height: 20px;
           }
         }
-        .discount-image {
+        .animated-img {
           right: 10px;
         }
       }
@@ -262,7 +262,7 @@ body {
       }
     }
     // --------------------------------------------------------------------------------------------- list-with-tick-mark
-    .list_with_tick_mark {
+    .header-list {
       ul {
         margin-top: 40px;
         margin-bottom: 50px;
@@ -282,8 +282,8 @@ body {
         }
       }
     }
-    // ------------------------------------------------------------------------------------------- special-promo-section
-    .special-promo-section {
+    // ------------------------------------------------------------------------------------------- header-promo
+    .header-promo {
       @extend %special-promo-style;
       @extend .button-style;
     }
@@ -311,7 +311,7 @@ body {
           @include change-mobile-screen {
             height: 450px;
           }
-          .card-content-last {
+          .cards-section__content-last {
             margin-top: 100px;
             height: 100px;
             @include change-small-screen {
@@ -325,7 +325,7 @@ body {
               padding-bottom: 30px;
             }
           }
-          .card-content {
+          .cards-section__content {
             height: 100px;
             @include change-small-screen {
               height: 130px;
@@ -361,7 +361,7 @@ body {
         top: 0;
         left: 0;
       }
-      .rotation-price {
+      .animated-img-price {
         position: absolute;
         top: 40px;
         right: 87px;
@@ -384,7 +384,7 @@ body {
           }
         }
       }
-      .discount-image {
+      .animated-img {
         position: absolute;
         top: 0;
         right: 50px;
@@ -433,12 +433,12 @@ body {
 
 
 // --------------------------------------------------------------------------------------------- SPECIAL-PROMO-SECTION-2
-.special-promo-section-2 {
+.header-promo-2 {
   position: relative;
   @extend %special-promo-style;
   @extend .button-style;
   text-align: center;
-  .rotation-price-2 {
+  .animated-img-price-2 {
     position: absolute;
     top: -10px;
     right: 39px;
@@ -461,7 +461,7 @@ body {
       }
     }
   }
-  .discount-image-2 {
+  .animated-img-2 {
     position: absolute;
     right: 0;
     top: -55px;
@@ -498,7 +498,7 @@ body {
     p {
       font-size: 31px;
     }
-    .figcaption-counter-2 {
+    .counter-caption-2 {
       font-size: 8px;
       text-align: center;
     }
@@ -506,7 +506,7 @@ body {
       p {
         font-size: 22px;
       }
-      .figcaption-counter-3 {
+      .counter-caption-3 {
         font-size: 6px;
       }
     }
@@ -585,7 +585,7 @@ body {
     @extend .green-background;
     margin-top: 0;
     position: relative;
-    .rotation-price-3 {
+    .animated-img-price-3 {
       position: absolute;
       top: -10px;
       right: 158px;
@@ -608,7 +608,7 @@ body {
         }
       }
     }
-    .discount-image-3 {
+    .animated-img-3 {
       position: absolute;
       top: -50px;
       right: 120px;
@@ -646,7 +646,7 @@ body {
   }
 }
 
-.special-promo-section-2 {
+.header-promo-2 {
   @extend %special-promo-style;
   @extend .button-style;
   text-align: center;
@@ -662,14 +662,14 @@ body {
     p {
       font-size: 31px;
     }
-    .figcaption-counter-3 {
+    .counter-caption-3 {
       font-size: 8px;
     }
     @include change-mobile-screen {
       p {
         font-size: 22px;
       }
-      .figcaption-counter-3 {
+      .counter-caption-3 {
         font-size: 6px;
       }
     }
@@ -697,7 +697,7 @@ body {
       text-align: center;
     }
   }
-  .footer-text {
+  .footer__content {
     padding-left: 30px;
     h1 {
       font-weight: bold;
@@ -725,9 +725,9 @@ body {
 
 
 // ------------------------------------------------------------------------------------------------------ ROTATING IMAGE
-.discount-image,
-.discount-image-2,
-.discount-image-3 {
+.animated-img,
+.animated-img-2,
+.animated-img-3 {
   -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
